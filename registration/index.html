@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <form action="">
+      <h1>Login</h1>
+      <div class="input-box">
+        <input type="text" id="fullName" placeholder="Full Name" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="email" id="email" placeholder="Email" required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <div class="input-box">
+        <input type="password" id="password" placeholder="Password" required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>  
+      <div class="input-box">
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <div class="input-box">
+        <input type="date" id="dob" placeholder="Date" required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <div class="input-box">
+        <input type="text" id="department" placeholder="Department" required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+
+      <div class="input-box">
+        <input type="text" id="studentNumber" placeholder="Student Number" required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <label style="margin: 20px;">Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female" required>
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="Other" required>
+      <label for="other">Other</label><br><br>
+ 
+      <label for="course" style="margin: 20px;">Course:</label>
+      <select id="course" required>
+          <option value="">Select Course</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Engineering">Engineering</option>
+          <option value="Information Technology">Information Technology</option>
+          <option value="Industrial Technology">Industrial Technology</option>
+          <option value="Accountancy">Accountancy</option>
+      </select><br>
+      <input style="margin: 20px;" type="checkbox" id="terms" required>
+      <label for="agreeTerms">I agree to the terms and conditions</label>
+      <button type="button" id="loginButton"  class="button">Submit</button>
+      <div class="register-link">
+        <p>Have an account? <a href="../login/index.html">Login</a></p>
+      </div>
+    </form>
+  </div>
+  
+</body>
+</html>
